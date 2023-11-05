@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-PersonalSite-D047BE5E-1385-45A3-8685-8356E7FA309D</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\gameoflife.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\favicon.ico" />
+    <None Include="wwwroot\gameoflife.html" />
+    <None Include="wwwroot\homelife.js" />
+    <None Include="wwwroot\nav.js" />
+    <None Include="wwwroot\rsc\Connect_4.xlsm" />
+    <None Include="wwwroot\rsc\Minecraft.xlsm" />
+    <None Include="wwwroot\rsc\Minesweeper.xlsm" />
+    <None Include="wwwroot\rsc\Resume.pdf" />
+    <None Include="wwwroot\rsc\Slide_Puzzle.xlsm" />
+    <None Include="wwwroot\rsc\sodabanner.png" />
+    <None Include="wwwroot\rsc\Wordle.xlsm" />
+    <None Include="wwwroot\style.css" />
+  </ItemGroup>
+
+</Project>

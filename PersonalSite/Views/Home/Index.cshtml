@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Nathan Boehm";
+    ViewData["HeadText"] = "This is my ";
+    ViewData["BoldText"] = "website";
+}
+
+<div class="container">
+
+      <div style="background-color: red; color: white;">
+        <b>YouTube</b>
+        <a href="https://www.youtube.com/NathanBoehm" target="_blank">
+          <span class="link"></span>
+        </a>
+      </div>
+
+      <div style="background-color: #29B000; color: white;">
+        <b>Tracle</b>
+        <a href="https://tracle.tv/channel/kFbpyWO6z_c" target="_blank">
+          <span class="link"></span>
+        </a>
+      </div>
+
+      <div style="background-color: #5865f2; color: white;">
+        <b>Discord</b>
+        <a href="https://discord.gg/QY3bExzUec" target="_blank">
+          <span class="link"></span>
+        </a>
+      </div>
+      
+      <div style="background-color: #0077b5; color: white;">
+        <b>LinkedIn</b>
+        <a href="https://www.linkedin.com/in/nathanboehm/" target="_blank">
+          <span class="link"></span>
+        </a>
+      </div>
+      
+      <div style="background-color: #6e5494; color: white;">
+        <b>GitHub</b>
+        <a href="https://github.com/comp-arison" target="_blank">
+          <span class="link"></span>
+        </a>
+      </div>
+    
+    </div>
+    
+    <div class="container">
+      
+      <div style="background-color: blue; color: #FF00FF;">
+        <p><b class="title">Soda Drinker Pro: NES Edition</b><br>A demake of the classic soda drinking simulator, for the NES.</p>
+        <a href="@Url.Action("Soda", "Home")">
+          <span class="link"></span>
+        </a>
+      </div>
+      
+      <div style="background-color: #34BEED; color: white;">
+        <p><b class="title">Wii Shop Channel Remake</b><br>A 1:1 remake of the Wii Shop Channel for the web.</p>
+        <a href="https://wiishopchannel.net" target="_blank">
+          <span class="link"></span>
+        </a>
+      </div>
+      
+      <div style="background-color: #037945; color: white;">
+        <p><b class="title">Excel Games</b><br>A bunch of old games I made in Micosoft Excel.</p>
+        <a href="@Url.Action("Excel", "Home")">
+          <span class="link"></span>
+        </a>
+      </div>
+
+      <div style="background-color: black; color: white;">
+        <canvas id="screen" style="position: absolute;"></canvas>
+        <p style="z-index: 1;"><b class="title">Game of Life</b><br>A simple remake of Conway's Game Of Life.</p>
+        <a href="/gameoflife.html">
+          <span class="link"></span>
+        </a>
+      </div>
+
+    </div>
+    <script src="/homelife.js"></script>
