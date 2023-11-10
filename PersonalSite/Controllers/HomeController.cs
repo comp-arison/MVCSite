@@ -82,6 +82,8 @@ namespace PersonalSite.Controllers
 
             mm.Priority = MessagePriority.Urgent;
 
+            mm.Importance = MessageImportance.High;
+
             mm.ReplyTo.Add(new MailboxAddress("User", cvm.Email));
 
             using (var client = new SmtpClient())
