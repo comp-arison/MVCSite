@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using PersonalSite.Models;
 
 namespace PersonalSite.Data
 {
@@ -9,5 +10,6 @@ namespace PersonalSite.Data
             : base(options)
         {
         }
+        public DbSet<PersonalSite.Models.ContactViewModel>? ContactViewModel { get; set; }
     }
 }

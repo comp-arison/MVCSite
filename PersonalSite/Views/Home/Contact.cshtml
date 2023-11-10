@@ -1,32 +1,84 @@
-﻿@{
+﻿@model PersonalSite.Models.ContactViewModel
+
+@{
     ViewData["Title"] = "Contact";
     ViewData["HeadText"] = "This is my ";
-    ViewData["BoldText"] = "contact page";
+    ViewData["BoldText"] = "Contact page";
 }
 
-<div class="container" style="justify-content: center; background-color: black;">
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Contact">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label"></label>
+                <input asp-for="Subject" class="form-control" />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Message" class="control-label"></label>
+                <input asp-for="Message" class="form-control" />
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+      
+        <form asp-action="Contact">
+      <div class="container">
         
         <div style="background-color: white; color: black;">
-          <p>Name: <input type="text" style="font-size: 0.75em;"></p>
+          <!--<p>Name: <input type="text" style="font-size: 0.75em;"></p>-->
+            <label asp-for="Name" class="control-label" style="font-size: 0.75em;"></label>
+            <input asp-for="Name" class="form-control" style="font-size: 0.5em;"/>
+            <span asp-validation-for="Name" class="text-danger"></span>
         </div>
         
         <div style="background-color: white; color: black;">
-          <p>Email: <input type="text" style="font-size: 0.75em;"></p>
+          <!--<p>Email: <input type="text" style="font-size: 0.75em;"></p>-->
+            <label asp-for="Email" class="control-label" style="font-size: 0.75em;"></label>
+            <input asp-for="Email" class="form-control" style="font-size: 0.5em;"/>
+            <span asp-validation-for="Email" class="text-danger"></span>
         </div>
         
         <div style="background-color: white; color: black;">
-          <p>Subject: <input type="text" style="font-size: 0.75em;"></p>
+          <!--<p>Subject: <input type="text" style="font-size: 0.75em;"></p>-->
+            <label asp-for="Subject" class="control-label" style="font-size: 0.75em;"></label>
+            <input asp-for="Subject" class="form-control" style="font-size: 0.5em;"/>
+            <span asp-validation-for="Subject" class="text-danger"></span>
         </div>
         
         <div style="background-color: white; color: black; vertical-align: middle; font-size: 2.25em;">
-          Content: <textarea rows="4" cols="50"></textarea>
+          <!--Message: <textarea rows="4" cols="50"></textarea>-->
+            <label asp-for="Message" class="control-label" style="font-size: 0.75em;"></label>
+            <textarea asp-for="Message" class="form-control" style="font-size: 0.5em;" rows="4" cols="50"></textarea>
+            <span asp-validation-for="Message" class="text-danger"></span>
         </div>
       
-        <div style="background-color: black; color: white; max-width: 150px;">
-          <b>Send</b>
-          <a href="#">
+        <div style="background-color: black; color: white;">
+          <input type="submit" value="Send" class="btn btn-primary" style="font-size: 1.5em; background-color: black; color: white;" />
+          <!--<a href="excel.html">
             <span class="link"></span>
-          </a>
+          </a>-->
         </div>
 
       </div>
+        </form>
